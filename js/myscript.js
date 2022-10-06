@@ -1,12 +1,12 @@
 
-let dni = document.getElementById("dni").value;
+let num_dni = document.getElementById("dni").value;
 let numtel = document.getElementById("movil").value;
-let correo = document.getElementById("email").value;
-let iban = document.getElementById("iban");
+let email = document.getElementById("email").value;
+let nimiban = document.getElementById("iban").value;
 function validacion(){
-    validar_correo(correo);
+    validar_correo(email);
     validar_movil(numtel)
-    validar_dni(dni);
+    validar_dni(num_dni);
     validar_iban(numiban);
 }
 function validar_dni(dni){
@@ -17,7 +17,7 @@ function validar_dni(dni){
     let mod;
     var DNI_REGEX = /^(\d{8})([A-Z])$/;
 
-    if(dni.match(DNI_REGEX)){
+    if(dni.toUpperCase.match(DNI_REGEX)){
         numeros = dni.substr(0,dni.length-1);
         letra =dni.substr(dni.length-1);
         mod = numeros%23;
@@ -31,17 +31,16 @@ function validar_dni(dni){
 }
 
 function validar_correo(correo){
-    var CORREO_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var CORREO_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     if( !correo.match(CORREO_REGEX)){
         alert("El correo introducido no es valido");
       }
 }
 
 function validar_movil(numtel){
-    var MOVIL_REGEX_SIN = /(\d{3})(\d{3})(\d{3})$/;
-    var MOVIL_REGEX_CON =/^(\d{3} )(\d{3} )(\d{3})$/
-    if(!numtel.match(MOVIL_REGEX_SIN)&&!num(MOVIL_REGEX_CON)){
-        alert("El número introducido noe s correcto");
+    var MOVIL_REGEX= /^\+?[\d ]/;
+    if(!numtel.match(MOVIL_REGEX)){
+        alert("El número introducido no es correcto");
     }
 }
 function validar_iban(numiban){
