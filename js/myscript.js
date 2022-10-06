@@ -15,7 +15,7 @@ function validar_dni(dni){
     let letras_dni = "TRWAGMYFPDXBNJZSQVHLCKET";
     let letra_correcta;
     let mod;
-    var DNI_REGEX = /^(\d{8})([A-Z])$/;
+    var DNI_REGEX = /^\d{8}[A-Z]$/;
 
     if(dni.toUpperCase.match(DNI_REGEX)){
         numeros = dni.substr(0,dni.length-1);
