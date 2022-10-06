@@ -2,7 +2,7 @@
 let num_dni = document.getElementById("dni").value;
 let numtel = document.getElementById("movil").value;
 let email = document.getElementById("email").value;
-let nimiban = document.getElementById("iban").value;
+let numiban = document.getElementById("iban").value;
 function validacion(){
     validar_correo(email);
     validar_movil(numtel)
