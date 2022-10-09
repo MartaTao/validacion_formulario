@@ -13,13 +13,13 @@
         <br>
         <input type="text" placeholder="Apellidos" name="apellido" required><br>
         <br>
-        <input type="email" placeholder="Correo electrónico" name="correo" required id="email"><br>
+        <input type="email" placeholder="Correo electrónico" name="correo" required id="email" onchange="validar_correo()"><br>
         <br>
-        <input type="text" placeholder="Teléfono" name="telefono" id="movil" required maxlength="12"><br>
+        <input type="text" placeholder="Teléfono" name="telefono" id="movil" required maxlength="12" onchange="validar_movil()"><br>
         <br>
-        <input type="text" placeholder="DNI" name="dni" required id="dni"><br>
+        <input type="text" placeholder="DNI" name="dni" required id="dni" onchange="validar_dni()"><br>
         <br>
-        <input type="text" placeholder="IBAN" name="iban" required id="iban"><br>
+        <input type="text" placeholder="IBAN" name="iban" required id="iban" onchange="validar_iban()"><br>
         <br>
         <input type="text" placeholder="Swift" name="swift" required><br>
         <br>
@@ -28,7 +28,7 @@
         <input type="date" name="Fecha de nacimineto" required><br>
         <br>
         <br>
-        <input type="submit" value="Enviar" onclick="validacion()">
+        <input type="submit" value="Enviar">
     </form>
     <script src="js/myscript.js"></script>
 </body>
