@@ -56,7 +56,7 @@
 }
 .promolink:hover{
     text-decoration: underline;
-    color: #fff
+    color: #fff;
 }
 .global_banner{
     width: 100%;
@@ -88,7 +88,7 @@ body {
     line-height: 1.5;
     color: #313131;
     text-align: left;
-    background-color: #f1edec
+    background-image: url(../images/fondo.jpg);
 }
 .nav{
     display: flex;
@@ -99,13 +99,18 @@ body {
 }
 .menu{
     width: 40%;
+    height: auto;
+    display: flex;
+    margin-left: 0;
 }
+
 .logo{
     width: 20%;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     display: inline-flex
+    
 }
 
 .acc{
@@ -114,4 +119,107 @@ body {
 .minecraft{
     max-width: 175px;
     height: 40px;
+}
+.menu ul li{
+    list-style:none;
+    font-family: 'Noto Sans';
+    position:relative;
+	float:left;
+    margin-left: 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu ul{
+    display:block;
+	padding:10px;
+}
+
+.menu ul ul a{
+    text-decoration: none;
+    font-size: .75rem;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: #a0e080;
+    outline-offset: -2px;
+    font-family: 'Noto Sans';
+}
+.menu ul ul{
+    display:none;
+	position:absolute;
+    background-color: #000;
+    width: 290px;
+}
+.menu ul ul li{
+    float:none;
+	width:280px;
+}
+.menu ul ul a {
+	line-height:120%;
+	padding:10px 15px;
+}
+.menu ul li:hover >ul{
+	display:block;
+}
+.menu ul li ul li a:hover{
+    background-color: #fff;
+    width: 280px;
+}
+.menus{
+    display: flex;
+    height: 100%;
+}
+.acc ul li{
+    list-style:none;
+}
+.acc ul li a{
+    text-decoration: none;
+    color:#a0e081;
+    font-size: .75rem;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    font-family: 'Noto Sans';
+    float: right;
+}
+.formulario{
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+label{
+    margin-left: 20px;
+    color: #5a5a5a;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.formulario input{
+    width: 90%;
+    height: 30px;
+    margin: 10px;
+  }
+.redes{
+    background-color: #000;
+    padding: 19px 0 9px 0;
+}
+h3{
+    text-align: center;
+    color: #fff;
+}
+@font-face {
+    font-family: 'MinecraftTen';
+    src: url(../other/MinecraftTen-VGORe.ttf);
+}
+h1{
+    text-align: center;
+    font-family:MinecraftTen;
+}
+*{
+    font-family: 'Noto Sans';
+}
+.logos{
+    margin-right: 10px;
 }

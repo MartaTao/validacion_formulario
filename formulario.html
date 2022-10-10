@@ -5,56 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/fomulario_style.css">
     <title>Minecraft</title>
 </head>
+<header>
+    <div class="global_banner">
+        <a class="promolink" href="https://www.minecraft.net/es-es/live">Minecraft Lice is back! Rune in Ocotber 15th at 12PM EDT.</a>
+        <nav class="topnav">
+            <ul>
+                <li class="login"><a href="https://www.minecraft.net/es-es/login">Log in</a></li>
+                <li class="redem"><a href="https://www.minecraft.net/es-es/redeem">Redeem</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav">
+       
+        <nav class="menu">
+            <ul>
+                <li><a>Games</a>
+                    <ul>
+                        <li><a class="mine" href="https://www.minecraft.net/es-es/about-minecraft"><img src="../images/minecraft.jfif" class="logos">Minecraft</a></li>
+                        <li><a class="dun" href="https://www.minecraft.net/es-es/about-dungeons"><img src="../images/dungeons.jfif" class="logos">Minecraft Dungeons</a></li> 
+                        <li><a class="leg" href="https://www.minecraft.net/es-es/about-legends"><img src="../images/legens.jfif" class="logos">Minecraft Legends</a></li>
+                        <li><a class="edu" href="https://education.minecraft.net/es-es"><img src="../images/edu.jfif" class="logos">Minecraft Educational Edition</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.minecraft.net/es-es/community">Comunity</a></li>
+                <li><a href="https://shop.minecraft.net/">Merch</a></li>
+                <li><a href="https://help.minecraft.net/hc/en-us">Support</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a class="minecraft_logo" href="https://www.minecraft.net/es-es">
+                <img class="minecraft" src="images/logo-minecraft.svg" alt="Logo de Minecraft">
+            </a>
+        </div>
+        <nav class="acc">
+            <ul>
+                <li><a href="https://www.minecraft.net/es-es/get-minecraft">Get Minecraft</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <body>
-    <header>
-        <div class="global_banner">
-            <a class="promolink" href="https://www.minecraft.net/es-es/live">Minecraft Lice is back! Rune in Ocotber 15th at 12PM EDT.</a>
-            <nav class="topnav">
-                <ul>
-                    <li class="login"><a href="https://www.minecraft.net/es-es/login">Log in</a></li>
-                    <li class="redem"><a href="https://www.minecraft.net/es-es/redeem">Redeem</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav">
-            <nav class="menu">
-
-            </nav>
-            <div class="logo">
-                <a class="minecraft_logo" href="https://www.minecraft.net/es-es">
-                    <img class="minecraft" src="images/logo-minecraft.svg" alt="Logo de Minecraft">
-                </a>
-            </div>
-            <nav class="acc">
-
-            </nav>
-        </div>
-    </header>
-    <form action="html/registro_realizado.html">
-        <input type="text" placeholder="Nombre" name="nombre" required><br>
-        <br>
-        <input type="text" placeholder="Apellidos" name="apellido" required><br>
-        <br>
-        <input type="email" placeholder="Correo electrónico" name="correo" required id="email" onchange="validar_correo()"><br>
-        <br>
-        <input type="text" placeholder="Teléfono" name="telefono" id="movil" required maxlength="12" onchange="validar_movil()"><br>
-        <br>
-        <input type="text" placeholder="DNI" name="dni" required id="dni" onchange="validar_dni()"><br>
-        <br>
-        <input type="text" placeholder="IBAN" name="iban" required id="iban" onchange="validar_iban()"><br>
-        <br>
-        <input type="text" placeholder="Swift" name="swift" id="swift"><br>
-        <br>
-        <input type="text" placeholder="Nombre usuario" name="usuario" required><br>
-        <br>
-        <input type="date" name="Fecha de nacimineto" required><br>
-        <br>
-        <br>
-        <input type="submit" value="Enviar">
-    </form>
+    <div >
+        <form class="formulario" action="html/registro_realizado.html">
+            <h1>Registrate</h1>
+            <label>Nombre</label>
+            <input type="text"  name="nombre" required>
+            <label>Apellidos</label>
+            <input type="text"  name="apellido" required>
+            <label>Dirección de correo electrónico</label>
+            <input type="email"  name="correo" required id="email" onchange="validar_correo()">
+            <label>Número de teléfono</label>
+            <input type="text"  name="telefono" id="movil" required maxlength="12" onchange="validar_movil()">
+            <label>DNI</label>
+            <input type="text" name="dni" required id="dni" onchange="validar_dni()">
+            <label>IBAN</label>
+            <input type="text"  name="iban" required id="iban" onchange="validar_iban()">
+            <label>SWIFT</label>
+            <input type="text"  name="swift" id="swift">
+            <label>Nombre de usuario</label>
+            <input type="text"  name="usuario" required>
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="Fecha de nacimineto" required>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+        <footer>
+            <section class="redes">
+                <h3>Follow Minecraft</h3>
+            </section>
+        </footer>
+</div>
     <script src="js/myscript.js"></script>
 </body>
+
 </html>
